@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('t_task_survey_details', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('task_id');              // foreign key to t_task_survey.TaskID
+            $table->integer('task_id');
             $table->string('id_pertanyaan');
             $table->string('tipe_pertanyaan');
             $table->text('jawaban')->nullable();
