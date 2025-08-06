@@ -17,18 +17,19 @@ class TTaskSurveyController extends Controller
     {
         $data = $request->validate([
             'TaskID' => 'required|integer',
-            'iduser' => 'required|integer',
-            'identitas_no' => 'required|string',
-            'nama_surveyor' => 'required|string',
+            'iduser' => 'nullable',
+            'identitas_no' => 'nullable|string',
+            'nama_surveyor' => 'nullable|string',
             'ID_Dir' => 'required|integer',
             'StatusTask' => 'required|integer',
-            'StatusTanah' => 'required|string',
+            'StatusTanah' => 'nullable|string',
             'KetSurvey' => 'nullable|string',
             'KetVerify' => 'nullable|string',
-            'idkuisoner' => 'required|integer',
+            'idkuisoner' => 'nullable|integer',
             'verifikator' => 'nullable|string',
             'verified_at' => 'nullable|date',
-            'CreatedDate' => 'required|date',
+            'CreatedDate' => 'nullable|date',
+
         ]);
 
         $survey = TTaskSurvey::create($data);
