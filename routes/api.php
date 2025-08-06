@@ -24,3 +24,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('task-survey-details', TTaskSurveyDetailController::class);
 
 Route::apiResource('task-survey',  TTaskSurveyController::class);
+Route::get('task-survey-data', function (Request $request) {
+    $taskId = $request->query('task_id');
+
+    if (!$taskId) {
+        return response()->json(['error' => 'task_id is required'], 422);
+    }
+
+    return \App\Models\TTaskSurveyDetail::where('task_id', $taskId)->get();
+});
