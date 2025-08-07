@@ -19,6 +19,7 @@ class TTaskSurveyDetailController extends Controller
             $data = $request->validate([
                 'task_id' => 'required|exists:t_task_survey,TaskID',
                 'id_pertanyaan' => 'required|string',
+                'group_pertanyaan' => 'required|string',
                 'tipe_pertanyaan' => 'required|string',
                 'jawaban' => 'nullable', // allow string OR file
             ]);
@@ -64,6 +65,7 @@ class TTaskSurveyDetailController extends Controller
         $data = $request->validate([
             'task_id' => 'sometimes|required|exists:t_task_survey,TaskID',
             'id_pertanyaan' => 'sometimes|required|string',
+            'group_pertanyaan' => 'sometimes|required|string',
             'tipe_pertanyaan' => 'sometimes|required|string',
             'jawaban' => 'nullable|string',
         ]);

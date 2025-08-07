@@ -14,6 +14,7 @@ class TTaskSurveyDetail extends Model
     protected $fillable = [
         'task_id',
         'id_pertanyaan',
+        'group_pertanyaan',
         'tipe_pertanyaan',
         'jawaban',
     ];
