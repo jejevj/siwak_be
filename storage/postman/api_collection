@@ -1,0 +1,624 @@
+{
+    "info": {
+        "name": "Laravel",
+        "description": "API Documentation",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "",
+            "item": [
+                {
+                    "name": "[GET] siwak_mobile",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}/siwak_mobile",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "siwak_mobile"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uploads",
+            "item": [
+                {
+                    "name": "answers",
+                    "item": [
+                        {
+                            "name": "[GET] siwak_mobile/uploads/answers/{filename}",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/uploads/answers/{filename}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "uploads",
+                                        "answers",
+                                        "{filename}"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "api",
+            "item": [
+                {
+                    "name": "user",
+                    "item": [
+                        {
+                            "name": "[GET] siwak_mobile/api/user",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/user",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "user"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "task-survey-details",
+                    "item": [
+                        {
+                            "name": "[GET] siwak_mobile/api/task-survey-details",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-details",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-details"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[POST] siwak_mobile/api/task-survey-details",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-details",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-details"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[GET] siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-details",
+                                        "{task_survey_detail}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[PUT] siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-details",
+                                        "{task_survey_detail}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[DELETE] siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-details/{task_survey_detail}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-details",
+                                        "{task_survey_detail}"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "task-survey",
+                    "item": [
+                        {
+                            "name": "[GET] siwak_mobile/api/task-survey",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[POST] siwak_mobile/api/task-survey",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[GET] siwak_mobile/api/task-survey/{task_survey}",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey/{task_survey}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey",
+                                        "{task_survey}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[PUT] siwak_mobile/api/task-survey/{task_survey}",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey/{task_survey}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey",
+                                        "{task_survey}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[DELETE] siwak_mobile/api/task-survey/{task_survey}",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey/{task_survey}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey",
+                                        "{task_survey}"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "task-survey-data",
+                    "item": [
+                        {
+                            "name": "[GET] siwak_mobile/api/task-survey-data",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/task-survey-data",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "task-survey-data"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "login",
+                    "item": [
+                        {
+                            "name": "[POST] siwak_mobile/api/login",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/login",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "login"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "dir-wakaf",
+                    "item": [
+                        {
+                            "name": "[POST] siwak_mobile/api/dir-wakaf",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/dir-wakaf",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "dir-wakaf"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[GET] siwak_mobile/api/dir-wakaf/{id}",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/dir-wakaf/{id}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "dir-wakaf",
+                                        "{id}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[PUT] siwak_mobile/api/dir-wakaf/{id}",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/dir-wakaf/{id}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "dir-wakaf",
+                                        "{id}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "[DELETE] siwak_mobile/api/dir-wakaf/{id}",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{base_url}}/siwak_mobile/api/dir-wakaf/{id}",
+                                    "host": [
+                                        "{{base_url}}"
+                                    ],
+                                    "path": [
+                                        "siwak_mobile",
+                                        "api",
+                                        "dir-wakaf",
+                                        "{id}"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost"
+        }
+    ]
+}

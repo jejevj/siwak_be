@@ -11,7 +11,6 @@ use App\Http\Controllers\DirWakafController;
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
-|
 | Here is where you can register API routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "api" middleware group. Make something great!
@@ -22,10 +21,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+// Remove throttle middleware from the next route
 Route::apiResource('task-survey-details', TTaskSurveyDetailController::class);
 
+// The following route was previously throttled, but now has no throttle middleware.
 Route::apiResource('task-survey', TTaskSurveyController::class);
+
 Route::get('task-survey-data', function (Request $request) {
     $taskId = $request->query('task_id');
 
@@ -35,8 +36,8 @@ Route::get('task-survey-data', function (Request $request) {
 
     return \App\Models\TTaskSurveyDetail::where('task_id', $taskId)->get();
 });
-Route::post('login', [AuthController::class, 'login']);
 
+Route::post('login', [AuthController::class, 'login']);
 
 Route::post('dir-wakaf', [DirWakafController::class, 'index']);
 Route::get('dir-wakaf/{id}', [DirWakafController::class, 'show']);
