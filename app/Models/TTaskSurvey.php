@@ -11,7 +11,6 @@ class TTaskSurvey extends Model
     public $timestamps = false;  // because your table uses CreatedDate, not created_at
 
     protected $fillable = [
-        'TaskID',
         'iduser',
         'identitas_no',
         'nama_surveyor',

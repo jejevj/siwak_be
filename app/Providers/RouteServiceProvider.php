@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
-            Route::prefix('siwak_mobile')
+            Route::prefix('mobile')
                 ->group(function () {
                     // == WEB ROUTES ==
                     Route::middleware(['web'])
@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function configureRateLimiting(): void
     {
         RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
+            return Limit::perMinute(2000)->by($request->user()?->id ?: $request->ip());
         });
     }
 }

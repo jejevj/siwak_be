@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('welcome');
+//});
 Route::get('/uploads/answers/{filename}', function ($filename) {
     $path = public_path('uploads/answers/' . $filename);
 
