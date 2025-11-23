@@ -1,0 +1,15 @@
+services:
+  siwak_web:
+    build: .
+    container_name: siwak_web
+    ports:
+      - "8099:8000"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - siwak_network
+    command: php artisan serve --host=0.0.0.0 --port=8000
+
+networks:
+  siwak_network:
+    driver: bridge
